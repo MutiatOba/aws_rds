@@ -54,6 +54,10 @@ If you do set up as easy create, then make sure you do the following to amend yo
 [if it does not connect, check the VPC security group allows traffic from port 1433 from 0.0.0.0/0]
 
 
+### Creating an SQL server databse on RDS using CLI
 
-
+1. make sure aws cli is installed
+2. Go to GitBash and login as a user using your secret key and access key
+3. type the following into your GitBash: ```aws rds create-db-instance --db-instance-identifier "mutidb" --db-instance-class "db.t3.small" --engine "sqlserver-ex" --master-username "admin" --master-user-password "Hello1234Hello" --publicly-accessible --port 1433 --allocated-storage 20```
+4. 
 
